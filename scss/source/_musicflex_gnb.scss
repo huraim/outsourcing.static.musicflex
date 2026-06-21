@@ -1,0 +1,105 @@
+#musicflex_gnb {
+  .gnb_logo {
+    display: flex;
+    align-items: center;
+    width: 44px;
+  }
+  .gnb_menu_area {
+    margin-left: 54px;
+  }
+  .gnb_menu_ul {
+    max-width: 628px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gnb_menu_li {
+    max-width: none;
+    flex-grow: initial;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .gnb_menu_li {
+      flex: 1 1 0;
+      min-width: 0;
+      max-width: 130px;
+    }
+  }
+
+  .gnb_logo_btn {
+    display: flex;
+    align-items: center;
+    .gnb_logo_text {
+      margin-left: 14px;
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: var(--font-weight-extra-bold);
+      .white {
+        background: var(--color-white-linear);
+      }
+      .point {
+        background: var(--color-musicflex-linear);
+      }
+      .white,
+      .point {
+        color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #musicflex_gnb {
+    .gnb_logo {
+      width: 42px;
+    }
+    .gnb_logo_btn {
+      .gnb_logo_text {
+        margin-left: 10px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #musicflex_gnb {
+    .gnb_logo {
+      width: 37px;
+    }
+  }
+}
+
+#musicflex_offcanvas_gnb {
+  .gnb_offcanvas_logo {
+    display: flex;
+    align-items: center;
+    width: 37px;
+  }
+  .gnb_logo_btn {
+    display: flex;
+    align-items: center;
+    .gnb_logo_text {
+      margin-left: 10px;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: var(--font-weight-extra-bold);
+      .white {
+        background: var(--color-white-linear);
+      }
+      .point {
+        background: var(--color-musicflex-linear);
+      }
+      .white,
+      .point {
+        color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+}

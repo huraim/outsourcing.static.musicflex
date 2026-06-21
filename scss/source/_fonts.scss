@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'nanum-square';
+  font-display: swap;
+  font-weight: 300;
+  src: url('../assets/fonts/NanumSquareL.woff') format('woff');
+}
+@font-face {
+  font-family: 'nanum-square';
+  font-display: swap;
+  font-weight: 400;
+  src: url('../assets/fonts/NanumSquareR.woff') format('woff');
+}
+@font-face {
+  font-family: 'nanum-square';
+  font-display: swap;
+  font-weight: 700;
+  src: url('../assets/fonts/NanumSquareB.woff') format('woff');
+}
+@font-face {
+  font-family: 'nanum-square';
+  font-display: swap;
+  font-weight: 900;
+  src: url('../assets/fonts/NanumSquareEB.woff') format('woff');
+}
+
+*,
+html,
+body {
+  font-family: 'nanum-square', sans-serif;
+}

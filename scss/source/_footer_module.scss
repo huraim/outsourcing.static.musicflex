@@ -1,0 +1,38 @@
+.footer_logo_btn {
+  display: flex;
+  align-items: center;
+  mix-blend-mode: luminosity;
+  & > p {
+    margin-left: 14px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: var(--font-weight-extra-bold);
+    span:nth-child(1) {
+      background: var(--color-white-linear);
+    }
+    span:nth-child(2) {
+      background: var(--color-musicflex-linear);
+    }
+    span:nth-child(1),
+    span:nth-child(2) {
+      color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  width: 44px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer_logo_btn {
+    & > p {
+      margin-left: 10px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}

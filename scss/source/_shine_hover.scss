@@ -1,0 +1,21 @@
+.shine_hover {
+  background-repeat: no-repeat;
+  background-position: 100% 100%, 0 0;
+  background-size: 250% 250%, 100% 100%;
+  background-image: -webkit-linear-gradient(
+    top left,
+    var(--color-white-00) 0%,
+    var(--color-white-00) 37%,
+    var(--color-white-34) 45%,
+    var(--color-white-00) 50%
+  );
+
+  -webkit-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+
+  &:hover {
+    background-position: 0 0, 0 0;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+}

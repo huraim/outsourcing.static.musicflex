@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="description" content="뮤직플렉스 - 유튜브 쇼츠 음원 수익 서비스" />
+  <title>뮤직플렉스 | 유튜브 쇼츠 음원 수익 서비스</title>
+  <link rel="icon" href="assets/icons/musicflex/favicon_256.png" type="image/png" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <article class="site-wrapper">
+    <div class="site-wrapper_inner">
+      <header id="header">
+        <nav id="musicflex_gnb" class="gnb">
+          <div class="gnb_main app_mode small">
+            <div class="gnb_main_inner">
+              <div class="gnb_section grow">
+                <div class="gnb_logo_area">
+                  <a href="#" class="gnb_logo_btn" data-no-navigate>
+                    <div class="gnb_logo">
+                      <svg viewBox="0 0 48 46" width="44" height="42" fill="none" aria-hidden="true">
+                        <path
+                          d="M3.32487 23.2209C3.32487 24.139 2.58077 24.8836 1.6622 24.8836C0.743629 24.8836 0 24.1395 0 23.2209C0 22.3023 0.744095 21.5582 1.66267 21.5582C2.58124 21.5582 3.32533 22.3023 3.32533 23.2209H3.32487ZM45.7108 21.5587C44.7927 21.5587 44.0481 22.3028 44.0481 23.2214C44.0481 24.1399 44.7922 24.884 45.7108 24.884C46.6293 24.884 47.3734 24.1399 47.3734 23.2214C47.3734 22.3028 46.6293 21.5587 45.7108 21.5587ZM13.09 7.42975C12.1257 7.52166 11.4175 8.38705 11.4175 9.35554V17.6087C11.4175 18.2954 10.861 18.852 10.1743 18.852C9.48756 18.852 8.93101 18.2954 8.93101 17.6087V15.8406C8.93101 14.8721 8.22283 14.0067 7.25854 13.9148C6.15243 13.8094 5.22126 14.6766 5.22126 15.7608V30.959C5.22126 31.9275 5.92943 32.7929 6.89373 32.8848C7.99984 32.9902 8.93101 32.123 8.93101 31.0388V28.6274C8.93101 27.9407 9.48756 27.3841 10.1743 27.3841C10.861 27.3841 11.4175 27.9407 11.4175 28.6274V37.0041C11.4175 37.9726 12.1257 38.838 13.09 38.9299C14.1961 39.0354 15.1273 38.1681 15.1273 37.0839V9.27576C15.1273 8.19111 14.1966 7.32385 13.09 7.42975ZM40.0323 13.9143C39.068 14.0062 38.3598 14.8716 38.3598 15.8401V17.6288C38.3598 18.3043 37.8126 18.8515 37.1371 18.8515C36.4616 18.8515 35.9144 18.3043 35.9144 17.6288V9.35507C35.9144 8.38658 35.2062 7.52119 34.2419 7.42929C33.1358 7.32385 32.2046 8.19111 32.2046 9.2753V37.0037C32.2046 37.9722 32.9128 38.8376 33.8771 38.9295C34.9832 39.0349 35.9144 38.1676 35.9144 37.0835V28.6064C35.9144 27.9309 36.4616 27.3836 37.1371 27.3836C37.8126 27.3836 38.3598 27.9309 38.3598 28.6064V30.9586C38.3598 31.927 39.068 32.7924 40.0323 32.8843C41.1384 32.9898 42.0696 32.1225 42.0696 31.0383V15.7599C42.0696 14.6752 41.1389 13.808 40.0323 13.9139V13.9143ZM27.9117 19.5018C28.9362 19.5018 29.7666 18.6714 29.7666 17.6469V10.1514C29.7666 7.5963 27.9882 5.42793 25.5395 4.68523V1.85487C25.5395 0.830401 24.7091 0 23.6846 0C22.6601 0 21.8297 0.830401 21.8297 1.85487V4.68523C19.381 5.42746 17.6026 7.5963 17.6026 10.1514V18.3906C17.6026 21.2191 20.0323 23.5199 23.0189 23.5199H23.2946C24.808 23.5199 26.0471 24.585 26.0573 25.8805V35.6909C26.0573 36.811 24.9932 37.7226 23.6846 37.7226C22.376 37.7226 21.3119 36.8115 21.3119 35.6909V25.7219C21.3119 24.6974 20.4815 23.867 19.457 23.867C18.4326 23.867 17.6022 24.6974 17.6022 25.7219V35.6909C17.6022 38.246 19.3805 40.4144 21.8293 41.1571V44.1451C21.8293 45.1696 22.6597 46 23.6841 46C24.7086 46 25.539 45.1696 25.539 44.1451V41.1571C27.9878 40.4149 29.7661 38.246 29.7661 35.6909V25.8665C29.7405 22.5272 26.8373 19.8107 23.2937 19.8107H23.018C22.077 19.8107 21.311 19.1739 21.311 18.391V10.1519C21.311 9.03177 22.3751 8.1202 23.6837 8.1202C24.9923 8.1202 26.0564 9.03131 26.0564 10.1519V17.6474C26.0564 18.6719 26.8868 19.5023 27.9113 19.5023L27.9117 19.5018Z"
+                          fill="url(#gnbLogoGradient)" />
+                        <defs>
+                          <linearGradient id="gnbLogoGradient" x1="23.6865" y1="4.69876" x2="23.6865" y2="52.0717"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9F7FFF" />
+                            <stop offset="0.57" stop-color="#4747FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <p class="gnb_logo_text"><span class="white">MUSIC</span><span class="point">FLEX</span></p>
+                  </a>
+                </div>
+
+                <div class="gnb_menu_area">
+                  <ul class="gnb_menu_ul">
+                    <li class="gnb_menu_li location">
+                      <a href="#" class="gnb_menu_li_btn" data-no-navigate>브랜드 소개</a>
+                    </li>
+                    <li class="gnb_menu_li">
+                      <a href="#" class="gnb_menu_li_btn" data-no-navigate>채널 관리</a>
+                    </li>
+                    <li class="gnb_menu_li">
+                      <a href="#" class="gnb_menu_li_btn" data-no-navigate>대시보드</a>
+                    </li>
+                    <li class="gnb_menu_li">
+                      <a href="#" class="gnb_menu_li_btn" data-no-navigate>수익 출금</a>
+                    </li>
+                    <li class="gnb_menu_li only_drop">
+                      <a href="#" class="gnb_menu_li_btn" data-no-navigate>이벤트</a>
+                      <div class="gnb_dropdown">
+                        <ul class="gnb_dropdown_ul">
+                          <li class="gnb_dropdown_li">
+                            <a href="https://info.mewpot.com/event/musicflex/levelup" class="gnb_dropdown_li_btn"
+                              target="_blank" rel="noopener noreferrer">💲 미션 깨고 95% 수익률 레벨업</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gnb_section">
+                <div class="gnb_action_area">
+                  <a class="gnb_guide_btn gnb_text_btn"
+                    href="https://mewpot.notion.site/77dfe7ec05fd43d0a5ef9e8ea4e057d2" target="_blank"
+                    rel="noopener noreferrer">💡 이용 가이드</a>
+                  <span class="gnb_price_section_line"></span>
+                  <div class="gnb_login_area">
+                    <a href="#" class="gnb_login_btn sign_in" data-no-navigate>로그인</a>
+                  </div>
+                  <div class="gnb_lang_area">
+                    <label class="gnb_lang_label" for="gnb_lang">
+                      <select name="language" id="gnb_lang">
+                        <option value="kr" selected>KR</option>
+                        <option value="en">EN</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="gnb_hamburger_btn" data-gnb-hamburger>
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main">
+        <article class="intro-page page_wrapper">
+          <div class="page_inner">
+            <section class="section head">
+              <button type="button" class="head_question" data-head-question>
+                <div class="cube_area">
+                  <img class="cube_question_mark" src="assets/images/pages/musicflex/intro/question_mark.png" alt="" />
+                  <div class="cube_box">
+                    <div class="cube_front"></div>
+                    <div class="cube_back"></div>
+                    <div class="cube_top"></div>
+                    <div class="cube_bottom"></div>
+                    <div class="cube_left"></div>
+                    <div class="cube_right"></div>
+                  </div>
+                </div>
+                <p>뮤팟과 뮤직플렉스의 차이점?</p>
+              </button>
+
+              <img class="head_bg" src="assets/images/pages/musicflex/intro/head_bg.png" alt="" />
+
+              <div class="scroll_down_info" data-scroll-down-info>
+                <div class="box"><span></span><span></span><span></span></div>
+              </div>
+
+              <div class="grid-wrapper head_grid grid">
+                <div class="grid-inner center sizeS">
+                  <div class="head_brand_area">
+                    <div class="head_brand_logo">
+                      <svg width="30" height="62" viewBox="0 0 30 62" fill="none" aria-hidden="true">
+                        <path
+                          d="M6.45695 31.0803C6.45695 32.8766 5.01191 34.3334 3.22802 34.3334C1.44414 34.3334 0 32.8776 0 31.0803C0 29.2831 1.44505 27.8273 3.22893 27.8273C5.01281 27.8273 6.45695 29.2831 6.45695 31.0803ZM25.421 0.184637C23.5483 0.364449 22.1731 2.0576 22.1731 3.95247V20.1C22.1731 21.4435 21.0922 22.5324 19.7586 22.5324C18.425 22.5324 17.3442 21.4435 17.3442 20.1V16.6406C17.3442 14.7458 15.9689 13.0526 14.0962 12.8728C11.9481 12.6665 10.1398 14.3633 10.1398 16.4845V46.2202C10.1398 48.115 11.5151 49.8082 13.3877 49.988C15.5358 50.1943 17.3442 48.4975 17.3442 46.3762V41.6582C17.3442 40.3147 18.425 39.2257 19.7586 39.2257C21.0922 39.2257 22.1731 40.3147 22.1731 41.6582V58.0476C22.1731 59.9425 23.5483 61.6356 25.421 61.8154C27.5691 62.0217 29.3775 60.3249 29.3775 58.2037V3.79639C29.3775 1.67425 27.57 -0.0225577 25.421 0.184637Z"
+                          fill="url(#headLogoLeft)" />
+                        <defs>
+                          <linearGradient id="headLogoLeft" x1="14.6886" y1="6.46637" x2="14.6886" y2="69.9718"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9F7FFF" />
+                            <stop offset="0.57" stop-color="#4747FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="head_brand_logo_jewel">
+                        <svg width="32" height="124" viewBox="0 0 32 124" fill="none" aria-hidden="true">
+                          <path
+                            d="M27.1205 52.5701C29.8155 52.5701 32 50.3317 32 47.57V27.3647C32 20.477 27.3218 14.6318 20.8801 12.6298V5.00009C20.8801 2.23847 18.6956 0 16.0006 0C13.3056 0 11.1212 2.23847 11.1212 5.00009V12.6298C4.67943 14.6305 0.00122982 20.477 0.00122982 27.3647V49.5746C0.00122982 57.1992 6.39264 63.4016 14.2494 63.4016H14.9747C18.9558 63.4016 22.2153 66.2726 22.2423 69.7649V96.2103C22.2423 99.2297 19.443 101.687 16.0006 101.687C12.5582 101.687 9.75893 99.2309 9.75893 96.2103V69.3373C9.75893 66.5757 7.57446 64.3372 4.87946 64.3372C2.18447 64.3372 0 66.5757 0 69.3373V96.2103C0 103.098 4.6782 108.943 11.1199 110.945V119C11.1199 121.762 13.3044 124 15.9994 124C18.6944 124 20.8789 121.762 20.8789 119V110.945C27.3206 108.944 31.9988 103.098 31.9988 96.2103V69.7271C31.9313 60.7255 24.2942 53.4026 14.9722 53.4026H14.2469C11.7716 53.4026 9.75647 51.6861 9.75647 49.5759V27.3659C9.75647 24.3465 12.5558 21.8892 15.9982 21.8892C19.4405 21.8892 22.2399 24.3453 22.2399 27.3659V47.5713C22.2399 50.3329 24.4255 52.5701 27.1205 52.5701Z"
+                            fill="black" />
+                        </svg>
+                        <img class="head_brand_logo_jewel_img"
+                          src="assets/images/pages/musicflex/intro/musicflex_money_jewel.png" alt="" />
+                        <span
+                          class="head_brand_logo_jewel_shine left"><span><strong></strong><strong></strong></span></span>
+                        <span
+                          class="head_brand_logo_jewel_shine right"><span><strong></strong><strong></strong></span></span>
+                      </div>
+                      <svg width="30" height="62" viewBox="0 0 30 62" fill="none" aria-hidden="true">
+                        <path
+                          d="M26.6066 27.829C24.8236 27.829 23.3777 29.2848 23.3777 31.082C23.3777 32.8792 24.8227 34.3351 26.6066 34.3351C28.3905 34.3351 29.8355 32.8792 29.8355 31.082C29.8355 29.2848 28.3905 27.829 26.6066 27.829ZM15.5789 12.8726C13.7063 13.0525 12.331 14.7456 12.331 16.6405V20.14C12.331 21.4616 11.2683 22.5323 9.95641 22.5323C8.64454 22.5323 7.58183 21.4616 7.58183 20.14V3.95233C7.58183 2.05746 6.20654 0.364305 4.33387 0.184493C2.18578 -0.0217885 0.377441 1.67502 0.377441 3.79625V58.0474C0.377441 59.9423 1.75272 61.6355 3.62539 61.8153C5.77348 62.0216 7.58183 60.3248 7.58183 58.2035V41.6179C7.58183 40.2963 8.64454 39.2256 9.95641 39.2256C11.2683 39.2256 12.331 40.2963 12.331 41.6179V46.22C12.331 48.1149 13.7063 49.808 15.5789 49.9878C17.727 50.1941 19.5354 48.4973 19.5354 46.3761V16.4835C19.5354 14.3613 17.7279 12.6655 15.5789 12.8726Z"
+                          fill="url(#headLogoRight)" />
+                        <defs>
+                          <linearGradient id="headLogoRight" x1="15.1063" y1="6.46636" x2="15.1063" y2="69.9717"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#9F7FFF" />
+                            <stop offset="0.57" stop-color="#4747FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="head_brand_text_area">
+                      <div class="gnb_logo_btn head_brand_text_inner">
+                        <p id="head_brand_text" class="gnb_logo_text"><span class="white">MUSIC</span><span
+                            class="point">FLEX</span></p>
+                        <div class="head_brand_text_ps">
+                          <img class="yt_shorts_logo" src="assets/images/pages/musicflex/intro/yt_shorts_logo.svg"
+                            alt="YouTube Shorts" />
+                          <p><a href="https://www.youtube.com/shorts" target="_blank" rel="noopener noreferrer"
+                              class="head_brand_text_ps">유튜브 쇼츠</a> 음원 수익 서비스</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="head_contents_area">
+                    <div class="head_text_area">
+                      <h1 class="head_text_title">
+                        <p class="typing_text" data-typing-text>유튜브 수익화 걱정 끝,</p><br />
+                        <span>쇼츠에 음원 수익</span>을 더하세요.
+                      </h1>
+                      <p class="head_text_sub">
+                        유튜브가 저작권자에게 지급한 <span>음악 라이선스 비용</span>을<br />
+                        뮤직플렉스가 크리에이터에게 제공하는 방식으로 음원 수익이 발생합니다.
+                      </p>
+                    </div>
+
+                    <div class="head_btn_area">
+                      <span class="head_btn" data-no-navigate>
+                        <div class="head_btn_border_effect"></div>지금 시작하기
+                      </span>
+                      <a class="head_btn dull" href="assets/images/pages/musicflex/intro/musicflex_service_guide.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="head_btn_border_effect"></div>서비스 소개서
+                      </a>
+                    </div>
+
+                    <button type="button" class="head_ps_btn" data-scroll-profit>✅ 결제 필요 없음 / ✅ 유튜브 저작권 안전</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="head_customer_bar" data-customer-bar>
+                <p>* 국내 최고 기업들이 선택한 뮤팟이 선보이는 신규 음원 수익 플랫폼, 뮤직플렉스</p>
+                <ul>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/samsung.svg" alt="samsung" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/naverz.png" alt="naverz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/snow.png" alt="snow" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/tvn.svg" alt="tvn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/cobig.png" alt="cobig" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/zepeto.svg" alt="zepeto" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/ocn.svg" alt="ocn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/uquiz.png" alt="uquiz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/lolq.svg" alt="lolq" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/sba.svg" alt="sba" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/samsung.svg" alt="samsung" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/naverz.png" alt="naverz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/snow.png" alt="snow" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/tvn.svg" alt="tvn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/cobig.png" alt="cobig" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/zepeto.svg" alt="zepeto" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/ocn.svg" alt="ocn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/uquiz.png" alt="uquiz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/lolq.svg" alt="lolq" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/sba.svg" alt="sba" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/samsung.svg" alt="samsung" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/naverz.png" alt="naverz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/snow.png" alt="snow" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/tvn.svg" alt="tvn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/cobig.png" alt="cobig" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/zepeto.svg" alt="zepeto" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/ocn.svg" alt="ocn" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/uquiz.png" alt="uquiz" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/lolq.svg" alt="lolq" /></li>
+                  <li><img src="assets/images/pages/musicflex/intro/customer/sba.svg" alt="sba" /></li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="section profit" data-profit-section>
+              <img class="bg_coin left" data-bg-coin src="assets/images/pages/musicflex/intro/bg_coin_left.png"
+                alt="" />
+              <img class="bg_coin right" data-bg-coin src="assets/images/pages/musicflex/intro/bg_coin_right.png"
+                alt="" />
+
+              <div class="grid-wrapper grid">
+                <div class="grid-inner left sizeS">
+                  <div class="text_area">
+                    <h2 class="title">음원만 바꿨을 뿐인데<br />쇼츠 수익이 와르르!</h2>
+                    <p class="sub">
+                      제작한 Shorts로 아직도 YouTube로부터<br class="only_mobile_br" /> Shorts 피드 광고 수익만 정산 받으세요?<br />
+                      이제부터 음원 수익까지 챙겨드릴게요!
+                    </p>
+                  </div>
+
+                  <div class="profit_ratio_box" data-profit-ratio-box>
+                    <video class="particle_video" data-particle-video muted autoplay playsinline>
+                      <source src="assets/images/pages/musicflex/intro/congratulation_particle.webm"
+                        type="video/webm" />
+                      <source src="assets/images/pages/musicflex/intro/congratulation_particle.mov"
+                        type="video/quicktime" />
+                    </video>
+
+                    <div class="profit_yt_label">
+                      <img class="yt_shorts_logo" src="assets/images/pages/musicflex/intro/yt_shorts_logo.svg"
+                        alt="YouTube Shorts" />
+                      <div class="profit_yt_label_text">
+                        <p>YouTube Shorts 수익 창출 정책</p>
+                        <a href="https://support.google.com/youtube/answer/12504220?hl=ko" target="_blank"
+                          rel="noopener noreferrer">자세히 보기</a>
+                      </div>
+                    </div>
+
+                    <ul class="profit_case_btn_ul">
+                      <li class="profit_case_btn_li active" data-profit-case="before">Before</li>
+                      <li class="profit_case_btn_li" data-profit-case="after">After</li>
+                    </ul>
+
+                    <p class="profit_case_text" data-profit-case-text></p>
+
+                    <div class="profit_ratio_graph_area before" data-profit-graph-area>
+                      <div class="profit_ratio_graph music_profit">음원 라이선스 비용</div>
+                      <div class="profit_ratio_graph user_profit">
+                        <div class="gauge_anim"></div>YouTube Shorts 수익
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section method" data-method-section>
+              <div class="grid-wrapper grid">
+                <div class="grid-inner left sizeS">
+                  <div class="text_area">
+                    <h2 class="title">쇼츠 수익을 더해주는<br />뮤직플렉스 이용 방법</h2>
+                    <p class="sub">
+                      유튜브에서 저작권자에게 지급하는<br />
+                      음악 라이선스 비용을, 뮤직 플렉스에서 받아가세요.
+                    </p>
+                    <a class="btn" href="https://mewpot.notion.site/77dfe7ec05fd43d0a5ef9e8ea4e057d2" target="_blank"
+                      rel="noopener noreferrer">
+                      자세히 보기
+                      <img class="btn_arrow" src="assets/images/pages/musicflex/intro/text_btn_arrow.svg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="method_video_area">
+                    <div class="iphone-phone-wrapper">
+                      <div class="iphone-phone">
+                        <div class="iphone-buttons">
+                          <div class="iphone-left">
+                            <div class="iphone-button"></div>
+                            <div class="iphone-button"></div>
+                            <div class="iphone-button"></div>
+                          </div>
+                          <div class="iphone-right">
+                            <div class="iphone-button"></div>
+                          </div>
+                        </div>
+                        <div class="iphone-screen-container">
+                          <div class="iphone-bg">
+                            <video src="assets/images/pages/musicflex/intro/method_video_h264.mp4" loop muted autoplay
+                              playsinline></video>
+                          </div>
+                          <div class="iphone-notch-blur"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section history">
+              <div class="grid-wrapper grid">
+                <div class="grid-inner left sizeS">
+                  <img class="walk_people" src="assets/images/pages/musicflex/intro/walk_people.png" alt="" />
+                  <div class="text_area">
+                    <h2 class="title">뮤팟은 크리에이터의<br />더 나은 창작 환경을 <br class="only_mobile_br" /> 위해 일합니다.</h2>
+                  </div>
+
+                  <ul class="history_line_ul">
+                    <li class="history_line_li point">
+                      <div class="history_contents even">
+                        <strong class="history_year">2024</strong>
+                        <p class="history_text">뮤팟 누적 가입 70만 이용자<br />누적 유튜브 구독자 수 9.5억명 돌파<br /><span>뮤직플렉스 출시</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="history_line_li">
+                      <div class="history_contents odd">
+                        <strong class="history_year">2023</strong>
+                        <p class="history_text">블루 포인트 투자 유치</p>
+                      </div>
+                    </li>
+                    <li class="history_line_li">
+                      <div class="history_contents even">
+                        <strong class="history_year">2022</strong>
+                        <p class="history_text">누적 회원가입자 수 10만 돌파<br />자막 템플릿, 영상 소스 서비스 런칭</p>
+                      </div>
+                    </li>
+                    <li class="history_line_li">
+                      <div class="history_contents odd">
+                        <strong class="history_year">2021</strong>
+                        <p class="history_text">쇼츠, 릴스, 틱톡을 위한<br />숏폼 전용 음원 런칭</p>
+                      </div>
+                    </li>
+                    <li class="history_line_li">
+                      <div class="history_contents even">
+                        <strong class="history_year">2020</strong>
+                        <p class="history_text">뮤팟 출시</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+
+      <footer id="footer">
+        <div class="footer_grid">
+          <section class="footer_main">
+            <div class="footer_logo_area footer-logo-module">
+              <a href="#" class="footer_logo_btn" data-no-navigate>
+                <div class="footer_logo">
+                  <svg viewBox="0 0 48 46" width="44" height="42" fill="none" aria-hidden="true">
+                    <path
+                      d="M3.32487 23.2209C3.32487 24.139 2.58077 24.8836 1.6622 24.8836C0.743629 24.8836 0 24.1395 0 23.2209C0 22.3023 0.744095 21.5582 1.66267 21.5582C2.58124 21.5582 3.32533 22.3023 3.32533 23.2209H3.32487ZM45.7108 21.5587C44.7927 21.5587 44.0481 22.3028 44.0481 23.2214C44.0481 24.1399 44.7922 24.884 45.7108 24.884C46.6293 24.884 47.3734 24.1399 47.3734 23.2214C47.3734 22.3028 46.6293 21.5587 45.7108 21.5587ZM13.09 7.42975C12.1257 7.52166 11.4175 8.38705 11.4175 9.35554V17.6087C11.4175 18.2954 10.861 18.852 10.1743 18.852C9.48756 18.852 8.93101 18.2954 8.93101 17.6087V15.8406C8.93101 14.8721 8.22283 14.0067 7.25854 13.9148C6.15243 13.8094 5.22126 14.6766 5.22126 15.7608V30.959C5.22126 31.9275 5.92943 32.7929 6.89373 32.8848C7.99984 32.9902 8.93101 32.123 8.93101 31.0388V28.6274C8.93101 27.9407 9.48756 27.3841 10.1743 27.3841C10.861 27.3841 11.4175 27.9407 11.4175 28.6274V37.0041C11.4175 37.9726 12.1257 38.838 13.09 38.9299C14.1961 39.0354 15.1273 38.1681 15.1273 37.0839V9.27576C15.1273 8.19111 14.1966 7.32385 13.09 7.42975ZM40.0323 13.9143C39.068 14.0062 38.3598 14.8716 38.3598 15.8401V17.6288C38.3598 18.3043 37.8126 18.8515 37.1371 18.8515C36.4616 18.8515 35.9144 18.3043 35.9144 17.6288V9.35507C35.9144 8.38658 35.2062 7.52119 34.2419 7.42929C33.1358 7.32385 32.2046 8.19111 32.2046 9.2753V37.0037C32.2046 37.9722 32.9128 38.8376 33.8771 38.9295C34.9832 39.0349 35.9144 38.1676 35.9144 37.0835V28.6064C35.9144 27.9309 36.4616 27.3836 37.1371 27.3836C37.8126 27.3836 38.3598 27.9309 38.3598 28.6064V30.9586C38.3598 31.927 39.068 32.7924 40.0323 32.8843C41.1384 32.9898 42.0696 32.1225 42.0696 31.0383V15.7599C42.0696 14.6752 41.1389 13.808 40.0323 13.9139V13.9143ZM27.9117 19.5018C28.9362 19.5018 29.7666 18.6714 29.7666 17.6469V10.1514C29.7666 7.5963 27.9882 5.42793 25.5395 4.68523V1.85487C25.5395 0.830401 24.7091 0 23.6846 0C22.6601 0 21.8297 0.830401 21.8297 1.85487V4.68523C19.381 5.42746 17.6026 7.5963 17.6026 10.1514V18.3906C17.6026 21.2191 20.0323 23.5199 23.0189 23.5199H23.2946C24.808 23.5199 26.0471 24.585 26.0573 25.8805V35.6909C26.0573 36.811 24.9932 37.7226 23.6846 37.7226C22.376 37.7226 21.3119 36.8115 21.3119 35.6909V25.7219C21.3119 24.6974 20.4815 23.867 19.457 23.867C18.4326 23.867 17.6022 24.6974 17.6022 25.7219V35.6909C17.6022 38.246 19.3805 40.4144 21.8293 41.1571V44.1451C21.8293 45.1696 22.6597 46 23.6841 46C24.7086 46 25.539 45.1696 25.539 44.1451V41.1571C27.9878 40.4149 29.7661 38.246 29.7661 35.6909V25.8665C29.7405 22.5272 26.8373 19.8107 23.2937 19.8107H23.018C22.077 19.8107 21.311 19.1739 21.311 18.391V10.1519C21.311 9.03177 22.3751 8.1202 23.6837 8.1202C24.9923 8.1202 26.0564 9.03131 26.0564 10.1519V17.6474C26.0564 18.6719 26.8868 19.5023 27.9113 19.5023L27.9117 19.5018Z"
+                      fill="url(#footerLogoGradient)" />
+                    <defs>
+                      <linearGradient id="footerLogoGradient" x1="23.6865" y1="4.69876" x2="23.6865" y2="52.0717"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9F7FFF" />
+                        <stop offset="0.57" stop-color="#4747FF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p><span>MUSIC</span><span>FLEX</span></p>
+              </a>
+            </div>
+
+            <div class="footer_menu_area">
+              <ul class="footer_menu_ul">
+                <li class="footer_menu_li">
+                  <h4 class="footer_menu_title">뮤직플렉스</h4>
+                  <div class="footer_dropdown">
+                    <ul class="footer_dropdown_ul">
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn" data-no-navigate>브랜드
+                          소개</a></li>
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn" data-no-navigate>음원
+                          찾기</a></li>
+                      <li class="footer_dropdown_li"><a class="footer_dropdown_li_btn"
+                          href="https://mewpot.notion.site/77dfe7ec05fd43d0a5ef9e8ea4e057d2" target="_blank"
+                          rel="noopener noreferrer">이용 가이드</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="footer_menu_li">
+                  <h4 class="footer_menu_title">회원 서비스</h4>
+                  <div class="footer_dropdown">
+                    <ul class="footer_dropdown_ul">
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn" data-no-navigate>계정
+                          정보</a></li>
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn" data-no-navigate>채널
+                          관리</a></li>
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn"
+                          data-no-navigate>대시보드</a></li>
+                      <li class="footer_dropdown_li"><a href="#" class="footer_dropdown_li_btn" data-no-navigate>수익
+                          출금</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_customer_area">
+              <ul class="footer_sns_ul">
+                <li class="footer_sns_li"><a class="footer_sns_li_btn facebook"
+                    href="https://www.facebook.com/mewpotofficial" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"></a></li>
+                <li class="footer_sns_li"><a class="footer_sns_li_btn youtube"
+                    href="https://www.youtube.com/channel/UC3HbaxN1FM4C23q3GLCDdWA" target="_blank"
+                    rel="noopener noreferrer" aria-label="YouTube"></a></li>
+                <li class="footer_sns_li"><a class="footer_sns_li_btn naver_blog" href="https://blog.naver.com/mewpot"
+                    target="_blank" rel="noopener noreferrer" aria-label="Naver Blog"></a></li>
+              </ul>
+              <button type="button" class="footer_customer_btn">
+                <img class="footer_customer_btn_img" src="assets/images/layouts/footer/customer_support.svg"
+                  alt="customer_support" />
+                <p class="footer_customer_btn_text">고객센터</p>
+              </button>
+              <a class="footer_koscap_btn" href="http://www.koscap.or.kr/introduction/vision" target="_blank"
+                rel="noopener noreferrer">
+                <img class="footer_koscap" src="assets/images/layouts/footer/koscap_ci.png" alt="koscap_ci" />
+              </a>
+            </div>
+          </section>
+
+          <span class="footer_section_line"></span>
+          <section class="footer_copyright">
+            <p>
+              뮤직플렉스는 크리에이터 여러분의 창작활동을 응원합니다
+              <span class="bar2"></span>
+              <a href="#" data-no-navigate>이용약관</a>
+              <span class="bar2"></span>
+              <a href="#" data-no-navigate>개인정보처리방침</a>
+              <span class="bar2"></span>
+              <a href="mailto:contact@mewpot.com">제휴문의: contact@mewpot.com</a>
+              <br />
+              주식회사 뮤팟
+              <span class="bar2"></span>
+              대표이사 조혜림
+              <span class="bar2"></span>
+              사업자등록번호 <span>390-81-00955</span>
+              <span class="bar2"></span>
+            <address>(05626) 서울특별시 송파구 송파대로44길 6, 2층 (송파동, 레이크프라자)</address>
+            <br />
+            Copyright © 2018 - 2026 MEWPOT Corp. All rights reserved.
+            <span class="bar2"></span>
+            통신판매업신고번호 2021-서울송파-1967
+            <br />
+            주식회사 뮤팟의 사전 서면 동의 없이 본 사이트의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.
+            </p>
+          </section>
+        </div>
+      </footer>
+
+      <nav class="gnb-bottom-wrapper">
+        <ul class="gnb-bottom-menu-ul">
+          <li class="gnb-bottom-menu-li gnb-bottom-active">
+            <a href="#" class="gnb-bottom-menu-btn" data-no-navigate>
+              <div class="gnb-bottom-menu-image"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M21.9914 10.9785C21.9914 11.6816 21.4184 12.2324 20.7691 12.2324H19.5469L19.5736 18.4902C19.5736 18.5957 19.566 18.7012 19.5545 18.8066V19.4395C19.5545 20.3027 18.8709 21.002 18.0268 21.002H17.4157C17.3736 21.002 17.3316 21.002 17.2896 20.998C17.2361 21.002 17.1827 21.002 17.1292 21.002L15.8879 20.998H14.9712C14.1271 20.998 13.4434 20.2988 13.4434 19.4355V18.498V15.998C13.4434 15.3066 12.8973 14.748 12.2212 14.748H9.77677C9.10072 14.748 8.55454 15.3066 8.55454 15.998V18.498V19.4355C8.55454 20.2988 7.87086 20.998 7.02677 20.998H6.1101H4.8917C4.83441 20.998 4.77711 20.9941 4.71982 20.9902C4.67399 20.9941 4.62816 20.998 4.58232 20.998H3.97121C3.12711 20.998 2.44343 20.2988 2.44343 19.4355V15.0605C2.44343 15.0254 2.44343 14.9863 2.44725 14.9512V12.2285H1.22503C0.53753 12.2285 0.00280762 11.6816 0.00280762 10.9746C0.00280762 10.623 0.117391 10.3105 0.384752 10.0371L10.174 1.31055C10.4413 1.03711 10.7469 0.998047 11.0143 0.998047C11.2816 0.998047 11.5872 1.07617 11.8163 1.27148L21.5712 10.041C21.8768 10.3145 22.0295 10.627 21.9914 10.9785Z"
+                    fill="white" />
+                </svg></div>
+              <span class="gnb-bottom-menu-text">메인화면</span>
+            </a>
+          </li>
+          <li class="gnb-bottom-menu-li"><a href="#" class="gnb-bottom-menu-btn" data-no-navigate>
+              <div class="gnb-bottom-menu-image"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M1 4.125C1 3.08984 1.83984 2.25 2.875 2.25H7.875C8.91016 2.25 9.75 3.08984 9.75 4.125V8.5C9.75 9.53516 8.91016 10.375 7.875 10.375H2.875C1.83984 10.375 1 9.53516 1 8.5V4.125ZM1 13.5C1 12.4648 1.83984 11.625 2.875 11.625H7.875C8.91016 11.625 9.75 12.4648 9.75 13.5V17.875C9.75 18.9102 8.91016 19.75 7.875 19.75H2.875C1.83984 19.75 1 18.9102 1 17.875V13.5ZM12.875 2.25H19.125C20.1602 2.25 21 3.08984 21 4.125V5.375C21 6.41016 20.1602 7.25 19.125 7.25H12.875C11.8398 7.25 11 6.41016 11 5.375V4.125C11 3.08984 11.8398 2.25 12.875 2.25ZM11 10.375C11 9.33984 11.8398 8.5 12.875 8.5H19.125C20.1602 8.5 21 9.33984 21 10.375V11.625C21 12.6602 20.1602 13.5 19.125 13.5H12.875C11.8398 13.5 11 12.6602 11 11.625V10.375ZM12.875 14.75H19.125C20.1602 14.75 21 15.5898 21 16.625V17.875C21 18.9102 20.1602 19.75 19.125 19.75H12.875C11.8398 19.75 11 18.9102 11 17.875V16.625C11 15.5898 11.8398 14.75 12.875 14.75Z"
+                    fill="white" />
+                </svg></div><span class="gnb-bottom-menu-text">대시보드</span>
+            </a></li>
+          <li class="gnb-bottom-menu-li"><a href="#" class="gnb-bottom-menu-btn" data-no-navigate>
+              <div class="gnb-bottom-menu-image"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M19.5324 2.21119C19.8242 2.42213 20 2.76315 20 3.12526V5.37526C20 5.86041 19.6906 6.28932 19.2301 6.44401L16.625 7.31237V17.1878C16.625 18.7417 14.8637 20.0003 12.6875 20.0003C10.5113 20.0003 8.75 18.7417 8.75 17.1878C8.75 15.6339 10.5113 14.3753 12.6875 14.3753C13.2922 14.3753 13.8652 14.4737 14.375 14.646V6.50026V4.25026C14.375 3.7651 14.6844 3.33619 15.1449 3.18151L18.5199 2.05651C18.8609 1.94401 19.2406 2.00026 19.5324 2.21119ZM3.125 4.25026H11C11.6223 4.25026 12.125 4.75299 12.125 5.37526C12.125 5.99752 11.6223 6.50026 11 6.50026H3.125C2.50273 6.50026 2 5.99752 2 5.37526C2 4.75299 2.50273 4.25026 3.125 4.25026ZM3.125 8.75026H11C11.6223 8.75026 12.125 9.25299 12.125 9.87526C12.125 10.4975 11.6223 11.0003 11 11.0003H3.125C2.50273 11.0003 2 10.4975 2 9.87526C2 9.25299 2.50273 8.75026 3.125 8.75026ZM3.125 13.2503H6.5C7.12227 13.2503 7.625 13.753 7.625 14.3753C7.625 14.9975 7.12227 15.5003 6.5 15.5003H3.125C2.50273 15.5003 2 14.9975 2 14.3753C2 13.753 2.50273 13.2503 3.125 13.2503Z"
+                    fill="white" />
+                </svg></div><span class="gnb-bottom-menu-text">음원목록</span>
+            </a></li>
+          <li class="gnb-bottom-menu-li"><a href="#" class="gnb-bottom-menu-btn" data-no-navigate>
+              <div class="gnb-bottom-menu-image"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M20.9955 16.1523C20.7549 17.0781 20.0483 17.8047 19.1507 18.0508C17.5236 18.5 11 18.5 11 18.5C11 18.5 4.47638 18.5 2.8493 18.0508C1.95173 17.8047 1.24513 17.0781 1.00451 16.1523C0.569092 14.4766 0.569092 10.9844 0.569092 10.9844C0.569092 10.9844 0.569092 7.49219 1.00451 5.81641C1.24513 4.89062 1.95173 4.19531 2.8493 3.94922C4.47638 3.5 11 3.5 11 3.5C11 3.5 17.5236 3.5 19.1507 3.94922C20.0483 4.19531 20.7549 4.89453 20.9955 5.81641C21.4309 7.49219 21.4309 10.9844 20.9955 16.1523ZM8.86874 7.8125V14.1563L14.3191 10.9844L8.86874 7.8125Z"
+                    fill="white" />
+                </svg></div><span class="gnb-bottom-menu-text">채널관리</span>
+            </a></li>
+          <li class="gnb-bottom-menu-li"><a href="#" class="gnb-bottom-menu-btn" data-no-navigate>
+              <div class="gnb-bottom-menu-image"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M4.19292 3.8955C3.99605 3.30487 3.3562 2.98847 2.76909 3.18182C2.18198 3.37518 1.86206 4.01854 2.05542 4.60565L3.81323 9.87557H3.12417C2.50191 9.87557 1.99917 10.3783 1.99917 11.0006C1.99917 11.6228 2.50191 12.1256 3.12417 12.1256H4.56206L6.55542 18.1057C6.71362 18.5803 7.16714 18.8932 7.66636 18.8756C8.16558 18.858 8.59448 18.5099 8.71402 18.0248L10.1906 12.1256H11.8078L13.2843 18.0248C13.4039 18.5099 13.8328 18.858 14.332 18.8756C14.8312 18.8932 15.2847 18.5803 15.4429 18.1057L17.4363 12.1256H18.8742C19.4964 12.1256 19.9992 11.6228 19.9992 11.0006C19.9992 10.3783 19.4964 9.87557 18.8742 9.87557H18.1851L19.9429 4.60565C20.1398 4.01503 19.8199 3.3787 19.2328 3.18182C18.6457 2.98495 18.0058 3.30487 17.8089 3.89198L15.8121 9.87557H13.5621L12.089 3.97636C11.966 3.47714 11.516 3.12557 10.9992 3.12557C10.4824 3.12557 10.0324 3.47714 9.90933 3.97636L8.43277 9.87557H6.18276L4.19292 3.8955ZM6.93511 12.1256H7.87027L7.46948 13.7287L6.93511 12.1256ZM10.7531 9.87557L10.9992 8.88768L11.2453 9.87557H10.7531ZM14.1281 12.1256H15.0632L14.5289 13.7287L14.1281 12.1256Z"
+                    fill="white" />
+                </svg></div><span class="gnb-bottom-menu-text">수익출금</span>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </article>
+
+  <div id="dim"></div>
+
+  <nav id="musicflex_offcanvas_gnb" class="gnb_offcanvas">
+    <div class="gnb_offcanvas_logo_area">
+      <a href="#" class="gnb_logo_btn" data-no-navigate>
+        <div class="gnb_offcanvas_logo">
+          <svg viewBox="0 0 48 46" width="37" height="35" fill="none" aria-hidden="true">
+            <path
+              d="M3.32487 23.2209C3.32487 24.139 2.58077 24.8836 1.6622 24.8836C0.743629 24.8836 0 24.1395 0 23.2209C0 22.3023 0.744095 21.5582 1.66267 21.5582C2.58124 21.5582 3.32533 22.3023 3.32533 23.2209H3.32487ZM45.7108 21.5587C44.7927 21.5587 44.0481 22.3028 44.0481 23.2214C44.0481 24.1399 44.7922 24.884 45.7108 24.884C46.6293 24.884 47.3734 24.1399 47.3734 23.2214C47.3734 22.3028 46.6293 21.5587 45.7108 21.5587ZM13.09 7.42975C12.1257 7.52166 11.4175 8.38705 11.4175 9.35554V17.6087C11.4175 18.2954 10.861 18.852 10.1743 18.852C9.48756 18.852 8.93101 18.2954 8.93101 17.6087V15.8406C8.93101 14.8721 8.22283 14.0067 7.25854 13.9148C6.15243 13.8094 5.22126 14.6766 5.22126 15.7608V30.959C5.22126 31.9275 5.92943 32.7929 6.89373 32.8848C7.99984 32.9902 8.93101 32.123 8.93101 31.0388V28.6274C8.93101 27.9407 9.48756 27.3841 10.1743 27.3841C10.861 27.3841 11.4175 27.9407 11.4175 28.6274V37.0041C11.4175 37.9726 12.1257 38.838 13.09 38.9299C14.1961 39.0354 15.1273 38.1681 15.1273 37.0839V9.27576C15.1273 8.19111 14.1966 7.32385 13.09 7.42975ZM40.0323 13.9143C39.068 14.0062 38.3598 14.8716 38.3598 15.8401V17.6288C38.3598 18.3043 37.8126 18.8515 37.1371 18.8515C36.4616 18.8515 35.9144 18.3043 35.9144 17.6288V9.35507C35.9144 8.38658 35.2062 7.52119 34.2419 7.42929C33.1358 7.32385 32.2046 8.19111 32.2046 9.2753V37.0037C32.2046 37.9722 32.9128 38.8376 33.8771 38.9295C34.9832 39.0349 35.9144 38.1676 35.9144 37.0835V28.6064C35.9144 27.9309 36.4616 27.3836 37.1371 27.3836C37.8126 27.3836 38.3598 27.9309 38.3598 28.6064V30.9586C38.3598 31.927 39.068 32.7924 40.0323 32.8843C41.1384 32.9898 42.0696 32.1225 42.0696 31.0383V15.7599C42.0696 14.6752 41.1389 13.808 40.0323 13.9139V13.9143ZM27.9117 19.5018C28.9362 19.5018 29.7666 18.6714 29.7666 17.6469V10.1514C29.7666 7.5963 27.9882 5.42793 25.5395 4.68523V1.85487C25.5395 0.830401 24.7091 0 23.6846 0C22.6601 0 21.8297 0.830401 21.8297 1.85487V4.68523C19.381 5.42746 17.6026 7.5963 17.6026 10.1514V18.3906C17.6026 21.2191 20.0323 23.5199 23.0189 23.5199H23.2946C24.808 23.5199 26.0471 24.585 26.0573 25.8805V35.6909C26.0573 36.811 24.9932 37.7226 23.6846 37.7226C22.376 37.7226 21.3119 36.8115 21.3119 35.6909V25.7219C21.3119 24.6974 20.4815 23.867 19.457 23.867C18.4326 23.867 17.6022 24.6974 17.6022 25.7219V35.6909C17.6022 38.246 19.3805 40.4144 21.8293 41.1571V44.1451C21.8293 45.1696 22.6597 46 23.6841 46C24.7086 46 25.539 45.1696 25.539 44.1451V41.1571C27.9878 40.4149 29.7661 38.246 29.7661 35.6909V25.8665C29.7405 22.5272 26.8373 19.8107 23.2937 19.8107H23.018C22.077 19.8107 21.311 19.1739 21.311 18.391V10.1519C21.311 9.03177 22.3751 8.1202 23.6837 8.1202C24.9923 8.1202 26.0564 9.03131 26.0564 10.1519V17.6474C26.0564 18.6719 26.8868 19.5023 27.9113 19.5023L27.9117 19.5018Z"
+              fill="url(#offcanvasLogoGradient)" />
+            <defs>
+              <linearGradient id="offcanvasLogoGradient" x1="23.6865" y1="4.69876" x2="23.6865" y2="52.0717"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9F7FFF" />
+                <stop offset="0.57" stop-color="#4747FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p class="gnb_logo_text"><span class="white">MUSIC</span><span class="point">FLEX</span></p>
+      </a>
+      <p class="gnb_offcanvas_logo_text">유튜브 쇼츠 음원 수익 서비스</p>
+    </div>
+    <div class="gnb_login_area">
+      <a href="#" class="gnb_login_btn sign_in" data-no-navigate>로그인</a>
+    </div>
+    <div class="gnb_menu_area">
+      <ul class="gnb_menu_ul">
+        <li class="gnb_menu_li location" data-offcanvas-toggle>
+          <a href="#" class="gnb_menu_li_btn" data-no-navigate>
+            브랜드 소개
+            <div class="gnb_dropdown_arrow_img">
+              <img src="assets/images/layouts/gnb/arrow_down.svg" alt="" width="14" height="14" />
+            </div>
+          </a>
+          <div class="gnb_dropdown" style="height:0">
+            <ul class="gnb_dropdown_ul">
+              <li class="gnb_dropdown_li location"><a href="#" class="gnb_dropdown_li_btn" data-no-navigate>브랜드 소개</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb_menu_li" data-offcanvas-toggle>
+          <a href="#" class="gnb_menu_li_btn" data-no-navigate>
+            채널 관리
+            <div class="gnb_dropdown_arrow_img">
+              <img src="assets/images/layouts/gnb/arrow_down.svg" alt="" width="14" height="14" />
+            </div>
+          </a>
+          <div class="gnb_dropdown" style="height:0">
+            <ul class="gnb_dropdown_ul">
+              <li class="gnb_dropdown_li"><a href="#" class="gnb_dropdown_li_btn" data-no-navigate>채널 관리</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb_menu_li" data-offcanvas-toggle>
+          <a href="#" class="gnb_menu_li_btn" data-no-navigate>
+            대시보드
+            <div class="gnb_dropdown_arrow_img">
+              <img src="assets/images/layouts/gnb/arrow_down.svg" alt="" width="14" height="14" />
+            </div>
+          </a>
+          <div class="gnb_dropdown" style="height:0">
+            <ul class="gnb_dropdown_ul">
+              <li class="gnb_dropdown_li"><a href="#" class="gnb_dropdown_li_btn" data-no-navigate>대시보드</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb_menu_li" data-offcanvas-toggle>
+          <a href="#" class="gnb_menu_li_btn" data-no-navigate>
+            수익 출금
+            <div class="gnb_dropdown_arrow_img">
+              <img src="assets/images/layouts/gnb/arrow_down.svg" alt="" width="14" height="14" />
+            </div>
+          </a>
+          <div class="gnb_dropdown" style="height:0">
+            <ul class="gnb_dropdown_ul">
+              <li class="gnb_dropdown_li"><a href="#" class="gnb_dropdown_li_btn" data-no-navigate>수익 출금</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gnb_menu_li" data-offcanvas-toggle>
+          <a href="#" class="gnb_menu_li_btn" data-no-navigate>
+            이벤트
+            <div class="gnb_dropdown_arrow_img">
+              <img src="assets/images/layouts/gnb/arrow_down.svg" alt="" width="14" height="14" />
+            </div>
+          </a>
+          <div class="gnb_dropdown" style="height:0">
+            <ul class="gnb_dropdown_ul">
+              <li class="gnb_dropdown_li"><a href="https://info.mewpot.com/event/musicflex/levelup"
+                  class="gnb_dropdown_li_btn" target="_blank" rel="noopener noreferrer">💲 미션 깨고 95% 수익률 레벨업</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="head_question_modal" data-question-modal>
+    <img class="head_question_guide_img" src="assets/images/pages/musicflex/intro/head_question_guide.png"
+      alt="뮤팟과 뮤직플렉스의 차이점" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

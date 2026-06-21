@@ -1,0 +1,88 @@
+.gnb-bottom-wrapper {
+  display: none;
+  position: relative;
+  background-color: var(--color-dark-1);
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-white-14);
+  }
+}
+
+.gnb-bottom-menu-ul {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.gnb-bottom-menu-li {
+  flex: 1;
+  &.gnb-bottom-active {
+    pointer-events: none;
+    .gnb-bottom-menu-image,
+    .gnb-bottom-menu-text {
+      opacity: 1;
+    }
+  }
+}
+
+.gnb-bottom-menu-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: var(--gnb-bottom-height);
+  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 2.4);
+  &::before {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--color-white-08);
+    transition: opacity 0.3s cubic-bezier(0.18, 0.89, 0.32, 2.4);
+  }
+  &.gnb-bottom-animation {
+    transform: scale(0.84);
+    pointer-events: none;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.gnb-bottom-menu-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.54;
+}
+
+.gnb-bottom-menu-text {
+  margin-top: 4px;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 10px;
+  opacity: 0.84;
+}
+
+@media (max-width: 991px) {
+  .gnb-bottom-wrapper {
+    display: block;
+    z-index: 993; // DIM, 재생바 보다 아래
+  }
+}

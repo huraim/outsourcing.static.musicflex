@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+ul,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: inherit;
+  color: inherit;
+}
+
+form {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+//Safari 터치시 깜빡임 제거
+input,
+select,
+textarea,
+button,
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
