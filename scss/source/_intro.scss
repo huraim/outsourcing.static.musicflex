@@ -399,6 +399,18 @@
       margin: 0;
       font-size: 34px;
       line-height: 34px;
+      font-weight: var(--font-weight-extra-bold);
+      .white {
+        background: var(--color-white-linear);
+      }
+      .point {
+        background: var(--color-musicflex-linear);
+      }
+      .white,
+      .point {
+        color: transparent;
+        background-clip: text;
+      }
     }
     .head_brand_text_ps {
       display: flex;
