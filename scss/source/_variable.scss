@@ -161,6 +161,16 @@
   }
 }
 
+/* 상단 GNB */
+:root {
+  --gnb-top-height: 70px;
+}
+@media (max-width: 767px) {
+  :root {
+    --gnb-top-height: 60px;
+  }
+}
+
 /* 앱 용도의 하단 GNB */
 :root {
   --gnb-bottom-height: 0;
