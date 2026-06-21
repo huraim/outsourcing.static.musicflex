@@ -830,6 +830,7 @@
   .section.head {
     padding: 64px 0 calc(64px + 50px) 0;
     .scroll_down_info {
+      display: none;
       transform: scale(0.8);
     }
     .head_contents_area {
@@ -953,7 +954,7 @@
       pointer-events: none;
       ul {
         width: max-content;
-        animation-duration: 70s;
+        animation-duration: 20s;
         gap: 16px;
       }
       li {
